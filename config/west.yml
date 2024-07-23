@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: ftc
       url-base: https://github.com/ftc/
+    - name: pete
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: ftc
-      revision: mouse-ftc
+      remote: pete
+      revision: feat/pointers-move-scroll
       import: app/west.yml
   self:
     path: config
