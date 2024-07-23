@@ -69,9 +69,9 @@
 
         mouse {
             bindings = <
-&to 0   &trans  &trans          &mmv MOVE_UP    &trans           &msc MOVE_UP     &msc MOVE_UP      &trans           &mmv MOVE_UP     &trans           &trans  &to 0
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc MOVE_DOWN   &msc MOVE_DOWN    &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans          &trans          &msc MOVE_LEFT   &msc MOVE_RIGHT  &msc MOVE_LEFT    &msc MOVE_RIGHT  &trans           &trans           &trans  &trans
+&to 0   &trans  &trans          &mmv MOVE_UP    &trans           &msc SCRL_Y(-5)     &msc SCRL_Y(-10)   &trans           &mmv MOVE_UP     &trans           &trans  &to 0
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_Y(5)      &msc SCRL_Y(10)    &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans          &trans          &msc SCRL_X(-5)  &msc SCRL_X(5)      &msc SCRL_X(-10)   &msc SCRL_Y(10)  &trans           &trans           &trans  &trans
                                 &mkp RCLK       &trans           &mkp LCLK  &mkp LCLK  &trans  &mkp RCLK
             >;
         };
