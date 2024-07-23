@@ -70,8 +70,8 @@
 
         mouse {
             bindings = <
-&to 0   &trans  &trans          &mmv MOVE_UP    &trans             &msc SCRL_DOWN     &msc SCRL_DOWN   &trans              &mmv MOVE_UP     &trans           &trans  &to 0
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCRL_UP       &msc SCRL_UP     &mmv MOVE_LEFT      &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans  &trans
+&to 0   &trans  &trans          &mmv MOVE_UP    &trans             &msc SCRL_UP       &msc SCRL_UP     &trans              &mmv MOVE_UP     &trans           &trans  &to 0
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCRL_DOWN     &msc SCRL_DOWN   &mmv MOVE_LEFT      &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans  &trans
 &trans  &trans  &trans          &trans          &msc SCRL_LEFT     &msc SCRL_RIGHT    &msc SCRL_LEFT   &msc SCRL_RIGHT     &trans           &trans           &trans  &trans
                                 &mkp RCLK       &trans             &mkp LCLK          &mkp LCLK        &trans              &mkp RCLK
             >;
