@@ -15,18 +15,17 @@
 #define RSE 2
 #define ADJ 3
 
-#define U_MOUSE_SCROLL_MAX 3                    /* <--- New max speed setting (default: 10) */k
+#define U_MOUSE_SCROLL_MAX 10                    /* <--- New max speed setting (default: 10) */k
 
 #undef SCROLL_UP
 #undef SCROLL_DOWN
 #undef SCROLL_LEFT
 #undef SCROLL_RIGHT
-#define SCROLL_UP SCRL_Y(U_MOUSE_SCROLL_MAX)
-#define SCROLL_DOWN SCRL_Y(-U_MOUSE_SCROLL_MAX)
-#define SCROLL_LEFT SCRL_X(-U_MOUSE_SCROLL_MAX)
-#define SCROLL_RIGHT SCRL_X(U_MOUSE_SCROLL_MAX)
+#define SCROLL_UP MOVE_Y(U_MOUSE_SCROLL_MAX)
+#define SCROLL_DOWN MOVE_Y(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_LEFT MOVE_X(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_RIGHT MOVE_X(U_MOUSE_SCROLL_MAX)
 
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 3
 
 &lt { quick_tap_ms = <200>; };
 
@@ -82,10 +81,10 @@
 
         mouse {
             bindings = <
-&to 0   &trans  &trans          &mmv MOVE_UP    &trans             &msc SCROLL_DOWN     &msc SCROLL_DOWN   &trans           &mmv MOVE_UP     &trans           &trans  &to 0
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCROLL_UP       &msc SCROLL_UP     &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans          &trans          &msc SCROLL_LEFT   &msc SCROLL_RIGHT    &msc SCROLL_RIGHT  &msc SCROLL_LEFT   &trans           &trans           &trans  &trans
-                                &mkp RCLK       &trans           &mkp LCLK  &mkp LCLK  &trans  &mkp RCLK
+&to 0   &trans  &trans          &mmv MOVE_UP    &trans             &msc SCROLL_DOWN     &msc SCROLL_DOWN   &trans              &mmv MOVE_UP     &trans           &trans  &to 0
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCROLL_UP       &msc SCROLL_UP     &mmv MOVE_LEFT      &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans          &trans          &msc SCROLL_LEFT   &msc SCROLL_RIGHT    &msc SCROLL_LEFT   &msc SCROLL_RIGHT   &trans           &trans           &trans  &trans
+                                &mkp RCLK       &trans             &mkp LCLK            &mkp LCLK          &trans              &mkp RCLK
             >;
         };
     };
